@@ -17,12 +17,13 @@ class LoginView extends StatelessWidget {
   final _storage = GetStorage();
   final _apiUrl = 'https://mobileapis.manpits.xyz/api/login';
 
+//Fungsi ini dipanggil saat tombol login ditekan
   void _login(BuildContext context) async {
     // Validasi email dan password
     String email = emailController.text.trim();
-    String password = passwordController.text.trim();
+    String password = passwordController.text.trim(); //fungsi trim() untuk memastikan bahwa data yang dikirim ke server adalah bersih dan bebas dari spasi yang tidak diinginkan, yang dapat menyebabkan masalah autentikasi.
 
-    if (email.isNotEmpty && password.isNotEmpty) {
+    if (email.isNotEmpty && password.isNotEmpty) { //fungsi && Ini memastikan bahwa kedua kondisi harus true agar blok kode di dalam if dieksekusi
       try {
         // Membuat permintaan HTTP POST untuk login
         final response = await _dio.post(
@@ -34,9 +35,9 @@ class LoginView extends StatelessWidget {
         );
 
         // Memeriksa apakah respons berhasil
-        if (response.statusCode == 200) {
+        if (response.statusCode == 200) { //Jika status code 200 (OK), token yang diterima disimpan ke dalam GetStorage
           // Simpan token dalam kelas TokenManager
-          _storage.write('token', response.data['data']['token']);
+          _storage.write('token', response.data['data']['token']); 
 
           // Navigasi ke halaman dashboard jika berhasil login
           Navigator.push(

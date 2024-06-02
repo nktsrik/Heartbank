@@ -149,6 +149,8 @@ class _UserCardScreenState extends State<UserCardScreen> {
           ),
         ],
       ),
+// true? "yes" : "no"
+
       body: Center(
         child: isLoading
             ? CircularProgressIndicator()

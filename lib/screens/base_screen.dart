@@ -47,22 +47,22 @@ class _BaseScreenState extends State<BaseScreen> {
           ),
           BottomNavigationBarItem(
             activeIcon: Image.asset(
-              'assets/images/play.png',
+              'assets/images/tabunganku.png',
               height: 24,
             ),
             icon: Image.asset(
-              'assets/images/play_outlined.png',
+              'assets/images/tabunganku.png',
               height: 24,
             ),
-            label: "My Learning",
+            label: "Tabunganku",
           ),
           BottomNavigationBarItem(
             activeIcon: Image.asset(
-              'assets/images/heart.png',
+              'assets/images/user.png',
               height: 24,
             ),
             icon: Image.asset(
-              'assets/images/heart_outlined.png',
+              'assets/images/user.png',
               height: 24,
             ),
             label: "User List",

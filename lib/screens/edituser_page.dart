@@ -58,13 +58,13 @@ Future<void> saveUser() async {
 
 
   @override
-  void initState() {
+  void initState() { // dilakukan pertama kali
     super.initState();
     _nameController = TextEditingController(text: widget.user.name);
     _addressController = TextEditingController(text: widget.user.address);
     _dateOfBirthController = TextEditingController(text: widget.user.dateOfBirth);
     _phoneNumberController = TextEditingController(text: widget.user.phoneNumber);
-  }
+  } 
 
   @override
   Widget build(BuildContext context) {

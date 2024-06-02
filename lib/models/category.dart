@@ -1,4 +1,3 @@
-
 class Category {
   final String name;
   final String thumbnail;
@@ -13,21 +12,21 @@ class Category {
 
 final List<Category> categoryList = [
   Category(
-    name: 'Laptop Gaming',
+    name: 'Tambah Transaksi',
     thumbnail:
-        'assets/images/laptop.jpg', // Ganti dengan path file thumbnail yang sesuai
+        'assets/images/transaksi.jpg', // Ganti dengan path file thumbnail yang sesuai
     noOfCourses: 5,
   ),
   Category(
-    name: 'Modul Node Js',
+    name: 'List All Transaksi',
     thumbnail:
-        'assets/images/node.png', // Ganti dengan path file thumbnail yang sesuai
+        'assets/images/list.jpg', // Ganti dengan path file thumbnail yang sesuai
     noOfCourses: 8,
   ),
   Category(
-    name: 'Modul React Js',
+    name: 'Saldo',
     thumbnail:
-        'assets/images/react.jpg', // Ganti dengan path file thumbnail yang sesuai
+        'assets/images/tabunganku.png', // Ganti dengan path file thumbnail yang sesuai
     noOfCourses: 8,
   ),
   // Tambahkan kategori lain jika diperlukan

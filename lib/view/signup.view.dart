@@ -12,15 +12,15 @@ class SignUpScreen extends StatefulWidget {
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {
-  final _dio = Dio();
-  final _apiUrl = 'https://mobileapis.manpits.xyz/api/register';
+  final _dio = Dio(); //perminataan http
+  final _apiUrl = 'https://mobileapis.manpits.xyz/api/register'; //endpoint api untuk pendaftaran
   // Boolean to determine whether the checkbox is checked or not
   bool agreeToTerms = false;
   // Boolean to determine whether the password text is hidden or not
   bool isObscure = true;
 
   TextEditingController usernameController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
+  TextEditingController emailController = TextEditingController(); 
   TextEditingController phoneNumberController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
